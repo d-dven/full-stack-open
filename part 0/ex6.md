@@ -3,8 +3,8 @@ sequenceDiagram
     participant browser
     participant server
     
-    Note right of browser: The user enters a note and clicks submit
-    Note right of browser: The browser executes the Javascript which updates the UI to include the new note
+    Note right of browser: The user clicks submit
+    Note right of browser: The browser executes the Javascript callback function which updates the UI to include the new note
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
